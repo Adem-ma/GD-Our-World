@@ -20,7 +20,6 @@ public class moneysCollect : MonoBehaviour
         {
             Coin++;
             output.text = Coin.ToString();
-            Debug.Log(Coin);
             Destroy(other.gameObject);
             source.PlayOneShot(clip);
         }
