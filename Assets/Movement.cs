@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    // Start is called before the first frame update
 
     float moveSpeed = 5;
     float sensitivity = 5;
@@ -28,7 +27,6 @@ public class Movement : MonoBehaviour
         mAnimator.SetBool("jumpBool", false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.W))
@@ -89,15 +87,6 @@ public class Movement : MonoBehaviour
 
         transform.Rotate(0, mouseX * sensitivity, 0);
         cameraFocus.transform.Rotate(-mouseY * sensitivity, 0, 0);
-
-        float xLimitLookUp = cameraFocus.transform.localEulerAngles.x;
-
-        //limitLookUp = camera.transform.localRotation;
-
-        if (xLimitLookUp >= 65)
-        {
-            Debug.Log("hi x is 90 yeyeyeye");
-        }
 
     }
 
