@@ -20,4 +20,4 @@ Er zijn katten in de map (ze hetten coin volgens mijn preference) met een collid
 Dan heb ik een script in de player character gezet waar de movement script ook is.
 Eerst heb ik een int voo de hoeveelheid coins (int omdat het hele getallen zijn), daarna een public text voor de ui, zodat het kan displayen hoeveel coins/katten je hebt, en als laatste AudioSource en Audio clip voor de sfx.
 
-in een private OnTriggerEnter heb ik een if statement die kijkt naar de tag van elke collisioned object, als de tag Coin is dan doet het de volgende; Coin int add, text change, destroy gameobject, en dan als laatste speelt ie een mp3 file af.
+In een private OnTriggerEnter ion de heb ik een if statement die kijkt naar de tag van elke collisioned object, als de tag Coin is dan doet het de volgende; Coin int add 1, text ui change, destroy gameobject, en dan als laatste speelt ie een mp3 file af.
