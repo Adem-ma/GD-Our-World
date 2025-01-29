@@ -8,3 +8,4 @@ Ik heb een private OnCollisionEnter, die checked of er een collision is met een 
 
 Als de input space is en de Onground true is dan geeft het de player's rigidbody een zet omhoog door de AddForce function, daarna valt hij naar beneden door gravity (idk unity heeft dat al).
 De snelheid op hoe dat gebeurt is aan te passen door de ForceMode in de AddForce aan te passe. Ik heb het op .Impulse staan omdat dat goed voelt.
+Er staat ook een trigger voor een jump animatie.
