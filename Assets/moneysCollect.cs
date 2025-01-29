@@ -11,6 +11,9 @@ public class moneysCollect : MonoBehaviour
 
     public Text output;
 
+    public AudioSource source;
+    public AudioClip clip;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Coin")
@@ -19,6 +22,7 @@ public class moneysCollect : MonoBehaviour
             output.text = Coin.ToString();
             Debug.Log(Coin);
             Destroy(other.gameObject);
+            source.PlayOneShot(clip);
         }
     }
 }
